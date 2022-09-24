@@ -6,6 +6,8 @@ export default function Actor() {
   let dataUrl = "";
   if (inputVal.length > 0) {
     dataUrl = `https://api.tvmaze.com/search/people?q=${inputVal}`;
+  }else{
+    dataUrl = `https://api.tvmaze.com/search/people?q=`;
   }
 
   const getActorsData = () => {
